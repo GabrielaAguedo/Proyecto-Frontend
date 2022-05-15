@@ -10,11 +10,40 @@ body {
     font-family: var(--fuente);
 }
 
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
 html {
     box-sizing: border-box;
 }
 
-*,*::after, *::before {
-    font-family: var(--fuente);
+.imgalcostado {
+    width: 200px;
+    height: 200px;
+
+    
+}
+.contenedorLoginRegistro {
+   display: flex;
+   
+    
 }
 
+.formulario {
+    width: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid red;
+    padding-top: 0.5rem;
+    background-color: #134074;
+}
+
+.logoimagen {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
