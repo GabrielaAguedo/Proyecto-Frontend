@@ -1,147 +1,187 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --login-bg:#f3fff4;
+    --title-bg: #275c29;
+    --button-bg: #4baf53;
+    --light-pink: #2a9b2a;
+    --image-bg:  #dbffdb ;
 }
 
 body {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/img3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #249738 0%, #cdfbc2 100%);
 }
 
-.contenedor-form {
-    width: 90%;
-    height: 90vh;
+.contenedor-login {
+    height: 35.75em;
+    width: 60em;
+    margin: 6em auto;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-around;
-    transition: all .5s ease-out;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.Bienvenido {
+.contenedor-info-login {
+    width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 0.5rem;
+    background-color: var(--login-bg);
 }
 
-.mensaje {
-    padding: 1rem;
+.contenedor-img {
+    padding: 2rem;
+    width: 50%;
+    background-color: var(--image-bg);
+    box-sizing: border-box;
 }
 
-.mensaje h2 {
-    font-size: 1.7rem;
-    padding: 1rem 0;
-}
-
-.mensaje button {
-    padding: 1rem;
-    font-weight: 400;
-    background-color: #4a4aee;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: .9rem;
-    margin-top: 2rem;
-    transition: all .3s ease-in;
-    color: #fff;
-}
-
-.mensaje button:hover {
-    background-color: #6464f8;
-}
-
-.formulario {
-    width: 400px;
-    padding: 1rem;
-    margin: 2rem;
-    background-color: rgb(51, 51, 51, 0.602);
-    text-align: center;
-}
-
-.create-account {
-    padding: 2.7rem 0;
-    font-size: 1.7rem;
-}
-
-.iconos {
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.border-icon {
-    height: 20px;
-    width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    border: solid thin white;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: all .3s ease-in;
-}
-
-.border-icon:hover {
-    background-color: #4a4aee;
-    cursor: pointer;
-}
-
-.cuenta-gratis {
-    padding: 2rem 0;
-}
-
-.formulario input {
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: white thin solid;
-    text-align: center;
-    outline: none;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: white;
-}
-
-.formulario input[type="button"] {
-    width: 60%;
-    margin: auto;
-    border: solid thin white;
-    padding: .7rem;
-    border-radius: 2rem;
-    background-color: white;
+.titulo {
+    text-transform: capitalize;
+    font-size: 2.25rem;
     font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
+    letter-spacing: 1px;
+    color: var(--title-bg);
+}
+
+.iniciar-rsocial {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     cursor: pointer;
-    color: #222;
 }
 
-.login {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
+.iniciar-rsocial-elem {
+    width: 8.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: 1px solid var(--button-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.login.active {
-    opacity: 1;
-    visibility: visible;
+.iniciar-rsocial-elem img {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
 }
 
-.crearcuenta.active {
-    opacity: 0;
-    visibility: hidden;
+.iniciar-rsocial-elem:hover {
+    background-color: rgb(151, 250, 142);
 }
+
+.contenedor-info-login > p {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+}
+
+.contenedor-inputs {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.input, .btn {
+    width: 90%;
+    height: 3.125rem;
+    font-size: 1em;
+}
+
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.input:hover {
+    border: 2px solid rgb(151, 250, 142);
+}
+
+.btn:hover {
+    background-color: rgb(31, 75, 27);
+    
+    
+}
+
+.btn {
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+
+.contenedor-inputs p {
+    margin: 0;
+}
+
+.span {
+    color: var(--light-pink);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenedor-login {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .contenedor-info-login {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .contenedor-img {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-container {
+        height: 90%;
+    }
+
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+
+    .login-info-container > p {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
 
