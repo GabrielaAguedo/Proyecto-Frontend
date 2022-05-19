@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-    --login-bg:#f3f4ff;
-    --title-bg: #272b5c;
-    --button-bg: #4b5aaf;
-    --light-pink: #2a329b;
-    --image-bg:  #dbdfff ;
+    --login-bg: #91caffbe;
+    --title-bg: #0c0b45;
+    --button-bg: #131574;
+    --light-pink: #22359e;
+    --image-bg:  #66b8d8 ;
 }
 
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to top, #243997 0%, #c2c6fb 100%);
+    background-image: linear-gradient(to top, #242c976c 0%, #7485a5 100%);
 }
 
 .contenedor-login {
@@ -73,12 +73,12 @@ figure {
 
 
 .iniciar-rsocial-elem {
-    width: 8.5rem;
+    width: 9rem;
     height: 3rem;
     font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    border-radius: 5px;
+    letter-spacing: 0.4px;
+    border-radius: 20px;
     border: 1px solid var(--button-bg);
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@ figure {
 }
 
 .iniciar-rsocial-elem:hover {
-    background-color: rgb(16, 36, 148);
+    background-color: rgb(16, 47, 148);
 }
 
 .contenedor-info-login > p {
@@ -116,12 +116,13 @@ figure {
     width: 90%;
     height: 3.125rem;
     font-size: 1em;
+    
 }
 
 .input {
     padding-left: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     box-sizing: border-box;
@@ -131,11 +132,11 @@ figure {
 
 
 .input:hover {
-    border: 2px solid rgb(142, 149, 250);
+    border: 2px solid rgb(142, 180, 250);
 }
 
 .btn:hover {
-    background-color: rgb(16, 36, 148);
+    background-color: rgb(14, 19, 61);
     
     
 }
@@ -146,7 +147,7 @@ figure {
     text-transform: uppercase;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: var(--button-bg);
     cursor: pointer;
     margin-bottom: 10px;
